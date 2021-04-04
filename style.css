@@ -5,11 +5,15 @@
 }
 
 body {
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  color: rgb(4, 1, 22);
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cca1e136569841.5720ffd3c7679.gif");
+  color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   overflow: hidden;
+
 }
 
 header {
@@ -22,33 +26,35 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+
 }
 
-/* form input {
+form input {
   opacity: 50%;
-} */
+}
 
 form input,
 form button {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
-  background: whitesmoke;
+  background: #ffffffb6;
   opacity: 90%;
+  outline: none;
+
 }
 
 form button {
-  color: lightskyblue;
-  background: rgb(4, 1, 22);
+  color: #fac887;
+  background: #00000066;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 2px solid lightskyblue;
-}
+} 
 
 form button:hover {
-  background-color: rgb(252, 240, 236);
-  color: rgb(138, 185, 208);
-  border: 2px solid rgb(4, 1, 22);
+  background-color: rgb(250, 200, 135);
+  color: rgb(0, 0, 0);
 }
 
 .todo-container {
@@ -74,11 +80,11 @@ form button:hover {
 }
 
 .todo li {
-  flex: 1; /* egymás mellé tolja a bottomoket  */
+  flex: 1; 
 }
 
 .completed-btn {
-  background-color: rgb(2, 45, 2);
+  background-color: #00000066;
   color: white;
   padding: 1rem;
   border: none;
@@ -87,8 +93,8 @@ form button:hover {
 }
 
 .trash-btn {
-  background-color: #ff6f64;
-  color: white;
+  background-color:#fac887;
+  color: #000000;
   padding: 1rem;
   border: none;
   cursor: pointer;
@@ -102,7 +108,6 @@ form button:hover {
 .fa-trash,
 .fa-check {
   pointer-events: none;
-  /* buttonre kattintva is törli */
 }
 
 .completed {
@@ -116,8 +121,6 @@ form button:hover {
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   outline: none;
   border: none;
@@ -139,10 +142,37 @@ select {
   right: 0;
   padding: 1rem;
   pointer-events: none;
-  background-color: rgb(142, 184, 204);
+  color: #fac887;
+  background-color:#000000ba;
 }
 
 .select:hover::after {
-  background: rgb(4, 1, 22);
-  color: rgb(142, 184, 204);
+  background: #fac887;
+  color: #000000;
+}
+
+@media screen and (max-width: 800px){
+
+form input,
+form button {
+  padding: 0.2rem;
+  font-size: 1.3rem;
+}
+
+form {
+  margin: 3rem;
+  min-height: 20vh;
+  flex-wrap: wrap;
+  align-items: center;
+ }
+
+select {
+  width: 9rem;
+  padding: 0.8rem;
+ }
+
+.select {
+  margin: 2rem;
+ }
+ 
 }
