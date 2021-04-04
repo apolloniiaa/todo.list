@@ -13,7 +13,6 @@ body {
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
-
 }
 
 header {
@@ -27,7 +26,6 @@ form {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-
 }
 
 form input {
@@ -42,7 +40,6 @@ form button {
   background: #ffffffb6;
   opacity: 90%;
   outline: none;
-
 }
 
 form button {
@@ -158,9 +155,8 @@ form button {
   padding: 0.2rem;
   font-size: 1.3rem;
 }
-
 form {
-  margin: 3rem;
+  margin: 2rem;
   min-height: 20vh;
   flex-wrap: wrap;
   align-items: center;
@@ -168,11 +164,7 @@ form {
 
 select {
   width: 9rem;
-  padding: 0.8rem;
- }
+  padding: 1rem;
+  }
 
-.select {
-  margin: 2rem;
- }
- 
 }
