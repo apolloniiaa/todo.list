@@ -150,21 +150,26 @@ select {
 
 @media screen and (max-width: 800px){
 
-form input,
-form button {
-  padding: 0.2rem;
-  font-size: 1.3rem;
-}
-form {
-  margin: 2rem;
-  min-height: 20vh;
-  flex-wrap: wrap;
-  align-items: center;
- }
+    form input,
+    form button {
+      padding: 0.2rem;
+      font-size: 1.3rem;
+    }
+    form {
+      margin: 2rem;
+      min-height: 20vh;
+      flex-wrap: wrap;
+      align-items: center;
+    }
 
-select {
-  width: 9rem;
-  padding: 1rem;
-  }
+    .filter-todo {
+      width: 7rem;
+      padding: 0.4rem;
+      font-size:0.5rem;
+      text-decoration: underline;
+    }
 
+    .select::after{
+      padding: 0.4rem;
+    }
 }
